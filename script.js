@@ -17,3 +17,4 @@ if (joinForm) {
     joinForm.reset();
   });
 }
+ 
