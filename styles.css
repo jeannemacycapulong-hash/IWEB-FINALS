@@ -1,0 +1,188 @@
+/* ========== Variables ========== */
+:root {
+  --first-color: hsl(40, 24%, 64%);
+  --first-color-alt: hsl(40, 31%, 54%);
+  --text-color: hsl(40, 8%, 15%);
+  --text-light: hsl(40, 8%, 35%);
+  --body-color: hsl(40, 100%, 98%);
+  --container-color: #fff;
+
+  --body-font: "Jost", sans-serif;
+  --second-font: "Cormorant Garamond", serif;
+}
+
+/* ========== Base ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  background: var(--body-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Containers */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ========== Header ========== */
+header {
+  background: var(--first-color);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo img {
+  width: 45px;
+}
+
+header h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: var(--second-font);
+  color: var(--text-color);
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+  color: #fff;
+}
+
+/* ========== Hero ========== */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), var(--first-color);
+  color: #fff;
+}
+
+.hero h2 {
+  font-family: var(--second-font);
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #f1f1f1;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--first-color-alt);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: var(--text-color);
+}
+
+/* ========== Cards Grid ========== */
+.cards-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+}
+
+.card {
+  background: var(--container-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 25px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-family: var(--second-font);
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-bottom: 15px;
+}
+
+/* ========== Sections ========== */
+section {
+  padding: 60px 20px;
+}
+
+section h2 {
+  font-family: var(--second-font);
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* ========== Join Form ========== */
+#joinForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#joinForm input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#joinForm button {
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ========== Footer ========== */
+footer {
+  background: var(--first-color);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #fff;
+  font-size: 0.9rem;
+}
