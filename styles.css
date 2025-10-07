@@ -1,4 +1,4 @@
-/* ========== Variables ========== */
+/* ========== VARIABLES ========== */
 :root {
   --first-color: hsl(40, 24%, 64%);
   --first-color-alt: hsl(40, 31%, 54%);
@@ -11,7 +11,7 @@
   --second-font: "Cormorant Garamond", serif;
 }
 
-/* ========== Base ========== */
+/* ========== BASEE ========== */
 * {
   margin: 0;
   padding: 0;
@@ -25,14 +25,14 @@ body {
   line-height: 1.6;
 }
 
-/* Containers */
+/* CONTAINERSS */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* ========== Header ========== */
+/* ========== HEADERRRR ========== */
 header {
   background: var(--first-color);
   padding: 1rem 2rem;
@@ -72,7 +72,7 @@ nav a:hover {
   color: #fff;
 }
 
-/* ========== Hero ========== */
+/* ========== HEROOO ========== */
 .hero {
   text-align: center;
   padding: 80px 20px;
@@ -107,7 +107,7 @@ nav a:hover {
   background: var(--text-color);
 }
 
-/* ========== Cards Grid ========== */
+/* ========== CARDSSSS ========== */
 .cards-grid {
   display: flex;
   justify-content: center;
@@ -191,7 +191,7 @@ nav a:hover {
 }
 
 
-/* ========== Sections ========== */
+/* ========== SECTIONSSS ========== */
 section {
   padding: 60px 20px;
 }
@@ -203,7 +203,7 @@ section h2 {
   text-align: center;
 }
 
-/* ========== Join Form ========== */
+/* ========== FORMMMM ========== */
 #joinForm {
   display: flex;
   flex-direction: column;
@@ -226,7 +226,7 @@ section h2 {
   cursor: pointer;
 }
 
-/* ========== Footer ========== */
+/* ========== FOPOTERRRR ========== */
 footer {
   background: var(--first-color);
   text-align: center;
