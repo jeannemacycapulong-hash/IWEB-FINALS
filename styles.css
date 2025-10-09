@@ -36,6 +36,8 @@ body {
 header {
   background: var(--first-color);
   padding: 1rem 2rem;
+  padding-left: 0;
+  margin-left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,11 +47,11 @@ header {
 header .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6 px;
 }
 
 header .logo img {
-  width: 45px;
+  width: 55px;
 }
 
 header h1 {
@@ -253,4 +255,3 @@ footer .social-icons img {
 footer .social-icons img:hover {
   transform: scale(1.2);
 }
-
