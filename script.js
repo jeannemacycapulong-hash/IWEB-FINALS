@@ -8,7 +8,7 @@ document.querySelectorAll("nav a").forEach(function(link) {
   }
 });
 
-// Join Form
+// Join Form 
 var joinForm = document.getElementById("joinForm");
 if (joinForm) {
   joinForm.addEventListener("submit", function(e) {
@@ -17,4 +17,3 @@ if (joinForm) {
     joinForm.reset();
   });
 }
- 
