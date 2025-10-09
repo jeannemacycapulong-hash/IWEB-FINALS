@@ -1,7 +1,7 @@
 /* ========== Root ========== */
 :root {
   --bg-color: #f5e6ca; 
-  --panel-color: #f9f1de; 
+  --panel-color: #F5E8E4; 
   --accent-color: #d2b48c;
   --dark-color: #3e2f1c;
   --light-color: #fff;
@@ -267,6 +267,135 @@ section h2 {
   border-radius: 6px;
 }
 
+.cards {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin: 40px auto;
+  width: 80%;
+  max-width: 900px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover animation for the card */
+.cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* The background image section */
+.card-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  background-image: url('assets/img/Capy_gun.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+/* Image zoom on hover */
+.cards:hover .card-image {
+  transform: scale(1.05);
+}
+
+
+.text {
+  flex: 1;
+}
+
+.text h3 {
+  font-weight: bold;
+  color: #3a2b17;
+  margin-bottom: 10px;
+}
+
+.text p {
+  color: #4a3b28;
+  line-height: 1.6;
+}
+
+/*FunFacts*/
+.funfacts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 layout */
+  gap: 2.5rem;
+  padding: 4rem 10%;
+  background: linear-gradient(to bottom right, #f9f3e9, #f4e3ca);
+  justify-content: center;
+}
+
+/* Individual card styling */
+.funfacts .card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 1.8rem 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 240px;
+  cursor: pointer;
+}
+
+/* Hover animation */
+.funfacts .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Image circle */
+.funfacts .card .image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+/* Text formatting */
+.funfacts .card .text h3 {
+  font-size: 1.3rem;
+  color: #3a2b17;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.funfacts .card .text p {
+  font-size: 1rem;
+  color: #4a3b28;
+  line-height: 1.6;
+}
+
+/* Background images for each card */
+.funfacts .digestive .image {
+  background-image: url('assets/img/Digestive_adapt.jpg');
+}
+
+.funfacts .social .image {
+  background-image: url('assets/img/Social_life.webp');
+}
+
+.funfacts .appearance .image {
+  background-image: url('assets/img/Appearance.jpg');
+}
+
+.funfacts .population .image {
+  background-image: url('assets/img/population_Threats.jpg');
+}
+
+
 /* ========== About Page ========== */
 .about-section {
   background-color: var(--panel-color);
@@ -290,6 +419,79 @@ section h2 {
   margin-top: 3rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+.info-cards-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 60px 10%;
+  background-color: #f6ece0; /* Softer beige like your sample */
+}
+
+.info-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 260px;
+  height: 260px; /* Square card */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Top image area */
+.info-card::before {
+  content: "";
+  width: 80%;
+  height: 90px; /* Small rectangle like in your sample */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* Background images per card */
+.info-card.friendly::before {
+  background-image: url("assets/img/friendly (1).jpg");
+}
+
+.info-card.place::before {
+  background-image: url("assets/img/Place_they_love.jpg");
+}
+
+.info-card.food::before {
+  background-image: url("assets/img/their_food.jpg");
+}
+
+/* Text styling */
+.info-card h3 {
+  font-size: 1.1em;
+  color: #3a2b17;
+  margin: 15px 0 8px;
+  font-weight: 700;
+}
+
+.info-card p {
+  color: #4a3b28;
+  font-size: 0.9em;
+  line-height: 1.5;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Hover effect */
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+}
+
+
 
 /* ========== Join Form ========== */
 #joinForm {
@@ -323,6 +525,31 @@ section h2 {
 #joinForm button:hover {
   background: var(--btn-hover);
 }
+.join-hero-section {
+  background: url("assets/img/JoinUs_header.webp") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 10%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+}
+
+.join-hero-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.join-hero-section p {
+  font-size: 1.1em;
+  text-align: left;
+  
+}
+
 
  /* ========== Footer ========== */
 footer {
