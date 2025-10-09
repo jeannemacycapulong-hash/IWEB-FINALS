@@ -1,7 +1,7 @@
-/* ========== ROOOOOTTTTT ========== */
+/* ========== ROOTT ========== */
 :root {
-  --bg-color: #f5e6ca; 
-  --panel-color: #f9f1de; 
+  --bg-color: #f5e6ca; /* main beige background */
+  --panel-color: #f9f1de; /* lighter beige panels */
   --accent-color: #d2b48c;
   --dark-color: #3e2f1c;
   --light-color: #fff;
@@ -11,7 +11,7 @@
   --font-title: 'Cormorant Garamond', serif;
 }
 
-/* ========== GLOBAL ========== */
+/* ========== GLOBALL ========== */
 * {
   margin: 0;
   padding: 0;
@@ -26,14 +26,14 @@ body {
   overflow-x: hidden;
 }
 
-/* CONTAINERS */
+/* Containers */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* ========== HEADRRRR ========== */
+/* ========== HEADERR ========== */
 header {
   background-color: var(--light-color);
   display: flex;
@@ -80,7 +80,7 @@ nav a:hover {
   color: var(--btn-color);
 }
 
-/* ========== HEROOOOOOO ========== */
+/* ========== HEROO ========== */
 .hero {
   background: linear-gradient(rgba(62, 47, 28, 0.45), rgba(62, 47, 28, 0.45)),
     url('assets/img/hero-bg.jpg') center/cover no-repeat;
@@ -114,7 +114,7 @@ nav a:hover {
   background: var(--btn-hover);
 }
 
-/* ========== SECTIONNNN ========== */
+/* ========== SECTION ========== */
 section {
   padding: 4rem 2rem;
 }
@@ -126,6 +126,7 @@ section h2 {
   margin-bottom: 2rem;
 }
 
+/* ========== GRIDDD ========== */
 .cards-grid {
   display: grid;
   gap: 2rem;
@@ -137,14 +138,14 @@ section h2 {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-/* FUNFFACTSS */
+/* FUN FACTS */
 .fun-facts-grid {
   grid-template-columns: repeat(2, 1fr);
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* CARDSSSSSS */
+/* CARDSS */
 .card {
   background: var(--light-color);
   border-radius: 12px;
@@ -204,13 +205,13 @@ section h2 {
   font-size: 1.05rem;
 }
 
-/* MISSION VISSIONNN */
+/* Mission and Vision grid */
 .about-section .cards-grid {
   margin-top: 3rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-/* ========== FORMM ========== */
+/* ========== FORMMM ========== */
 #joinForm {
   background: var(--light-color);
   border-radius: 12px;
@@ -243,7 +244,7 @@ section h2 {
   background: var(--btn-hover);
 }
 
-/* ========== FOOTERRRR ========== */
+/* ========== FOOTERRR ========== */
 footer {
   background: var(--dark-color);
   color: var(--light-color);
