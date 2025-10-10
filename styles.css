@@ -4,8 +4,9 @@
   --panel-color: #F5E8E4; 
   --accent-color: #d2b48c;
   --dark-color: #3e2f1c;
-  --light-color: #fff;
-  --btn-color: #b5835a;
+  --light-color: #EED9C4;
+  --card-color: #fff;
+  --btn-color: #C89A29;
   --btn-hover: #8b5e3c;
   --font-main: 'Jost', sans-serif;
   --font-title: 'Cormorant Garamond', serif;
@@ -53,7 +54,7 @@ header .logo {
 }
 
 header .logo img {
-  width: 50px;
+  width: 65px;
   height: 50px;
 }
 
@@ -80,9 +81,45 @@ nav a:hover {
   color: var(--btn-color);
 }
 
+/* ========== Welcome Section ========== */
+.welcome-hero {
+  background: url("assets/img/welcome_header.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+  border-radius: 15px;
+}
+
+.welcome-hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #4a3b28;
+}
+
+.welcome-hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #4a3b28;
+}
+
+.welcome-hero .btn {
+  background: #C89A29;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.welcome-hero .btn:hover {
+  background: #a6734c;
+}
+
+
+
 /* ========== Hero Section ========== */
 .hero {
-  background: linear-gradient(rgba(62, 47, 28, 0.45), rgba(62, 47, 28, 0.45)),
+  background: #FFF0DB,
     url('assets/img/hero-bg.jpg') center/cover no-repeat;
   text-align: center;
   padding: 6rem 1rem;
@@ -227,7 +264,7 @@ section h2 {
 
 /* Cards */
 .card {
-  background: var(--light-color);
+  background: var(--card-color);
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -397,22 +434,31 @@ section h2 {
 
 
 /* ========== About Page ========== */
-.about-section {
-  background-color: var(--panel-color);
-  border-radius: 20px;
-  padding: 3rem 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
-.about-section p {
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.8;
-  font-size: 1.05rem;
+.about-image {
+  width: 350px;
+  height: 350px;
+  border-radius: 15px;
+  background-image: url("assets/img/Who_we_Are.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.about-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+
+
 
 /* Mission and Vision grid */
 .about-section .cards-grid {
@@ -427,7 +473,7 @@ section h2 {
   flex-wrap: wrap;
   gap: 30px;
   padding: 60px 10%;
-  background-color: #f6ece0; /* Softer beige like your sample */
+  background-color: #f6ece0; 
 }
 
 .info-card {
@@ -448,7 +494,7 @@ section h2 {
 .info-card::before {
   content: "";
   width: 80%;
-  height: 90px; /* Small rectangle like in your sample */
+  height: 90px; 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -551,6 +597,8 @@ section h2 {
 }
 
 
+
+
  /* ========== Footer ========== */
 footer {
   background: var(--dark-color);
@@ -616,5 +664,18 @@ footer .social-icons img:hover {
 
   .hero h2 {
     font-size: 1.8rem;
+  }
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .funfacts {
+    grid-template-columns: 1fr;
+  }
+  .funfact-card {
+    flex-direction: column;
+  }
+  .funfact-image {
+    height: 200px;
   }
 }
