@@ -1,4 +1,4 @@
-/* ========== Root ========== */
+/* ========== ROOTTT ========== */
 :root {
   --bg-color: #f5e6ca; 
   --panel-color: #F5E8E4; 
@@ -12,7 +12,7 @@
   --font-title: 'Cormorant Garamond', serif;
 }
 
-/* ========== Global  ========== */
+/* ========== GLOBALL  ========== */
 * {
   margin: 0;
   padding: 0;
@@ -27,14 +27,14 @@ body {
   overflow-x: hidden;
 }
 
-/* Containers */
+/* CONTAINERSS */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* ========== Header ========== */
+/* ========== HEADERRR ========== */
 header {
   background-color: var(--light-color);
   display: flex;
@@ -81,7 +81,7 @@ nav a:hover {
   color: var(--btn-color);
 }
 
-/* ========== Welcome Section ========== */
+/* ========== WELCOMEEE ========== */
 .welcome-hero {
   background: url("assets/img/welcome_header.jpg") no-repeat center center/cover;
   color: #fff;
@@ -115,9 +115,7 @@ nav a:hover {
   background: #a6734c;
 }
 
-
-
-/* ========== Hero Section ========== */
+/* ========== HEROOO ========== */
 .hero {
   background: #FFF0DB,
     url('assets/img/hero-bg.jpg') center/cover no-repeat;
@@ -188,7 +186,6 @@ nav a:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/img/FunFacts_Header.jpg'); 
 }
 
-
 .events-hero{
   text-align: center; 
   padding-left: 5%; 
@@ -232,7 +229,7 @@ nav a:hover {
   text-align: center;
 }
 
-/* ========== Section Basics ========== */
+/* ========== SECTIONS ========== */
 section {
   padding: 4rem 2rem;
 }
@@ -262,7 +259,7 @@ section h2 {
   margin: 0 auto;
 }
 
-/* Cards */
+/* ========== CARDSS ==========*/
 .card {
   background: var(--card-color);
   border-radius: 12px;
@@ -316,7 +313,7 @@ section h2 {
   cursor: pointer;
 }
 
-/* Hover animation for the card */
+/* ========== ANIMATION FOR CARDS ========== */
 .cards:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -329,22 +326,9 @@ section h2 {
   gap: 20px;
 }
 
-/* The background image section */
-.card-image {
-  width: 180px;
-  height: 180px;
-  border-radius: 10px;
-  background-image: url('assets/img/Capy_gun.jpg');
-  background-size: cover;
-  background-position: center;
-  transition: transform 0.3s ease;
-}
-
-/* Image zoom on hover */
 .cards:hover .card-image {
   transform: scale(1.05);
 }
-
 
 .text {
   flex: 1;
@@ -361,17 +345,21 @@ section h2 {
   line-height: 1.6;
 }
 
-/*FunFacts*/
+/* ========== FUN FACTS ========== */
 .funfacts {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2x2 layout */
+  grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
   padding: 4rem 10%;
-  background: linear-gradient(to bottom right, #f9f3e9, #f4e3ca);
   justify-content: center;
+
+  background: 
+    linear-gradient(to right, #C5AA87 50%, #CFBDA5 50%),
+    linear-gradient(to bottom, #C5AA87 50%, #CFBDA5 50%);
+  background-blend-mode: overlay;
+  background-size: 100% 100%;
 }
 
-/* Individual card styling */
 .funfacts .card {
   display: flex;
   align-items: center;
@@ -385,13 +373,12 @@ section h2 {
   cursor: pointer;
 }
 
-/* Hover animation */
 .funfacts .card:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Image circle */
+/* ========== IMAGE CIRCLE ========== */
 .funfacts .card .image {
   width: 120px;
   height: 120px;
@@ -401,7 +388,7 @@ section h2 {
   flex-shrink: 0;
 }
 
-/* Text formatting */
+/* ========== TEXT FORMATT ========== */
 .funfacts .card .text h3 {
   font-size: 1.3rem;
   color: #3a2b17;
@@ -415,7 +402,32 @@ section h2 {
   line-height: 1.6;
 }
 
-/* Background images for each card */
+.info-card h3 {
+  font-size: 1.1em;
+  color: #3a2b17;
+  margin: 15px 0 8px;
+  font-weight: 700;
+}
+
+.info-card p {
+  color: #4a3b28;
+  font-size: 0.9em;
+  line-height: 1.5;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* ========== BG IMAGE FOR CARDS ========== */
+.card-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  background-image: url('assets/img/Capy_gun.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
 .funfacts .digestive .image {
   background-image: url('assets/img/Digestive_adapt.jpg');
 }
@@ -432,8 +444,36 @@ section h2 {
   background-image: url('assets/img/population_Threats.jpg');
 }
 
+.info-card::before {
+  content: "";
+  width: 80%;
+  height: 90px; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin-top: 15px;
+}
 
-/* ========== About Page ========== */
+.info-card.friendly::before {
+  background-image: url("assets/img/friendly (1).jpg");
+}
+
+.info-card.place::before {
+  background-image: url("assets/img/Place_they_love.jpg");
+}
+
+.info-card.food::before {
+  background-image: url("assets/img/their_food.jpg");
+}
+
+/* ========== HOVER EFFECT ========== */
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ========== ABOUTT ========== */
 .about-content {
   display: flex;
   align-items: center;
@@ -457,10 +497,7 @@ section h2 {
   text-align: left;
 }
 
-
-
-
-/* Mission and Vision grid */
+/* ========== MISSION VISSION ========== */
 .about-section .cards-grid {
   margin-top: 3rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -481,7 +518,7 @@ section h2 {
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 260px;
-  height: 260px; /* Square card */
+  height: 260px; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -490,56 +527,7 @@ section h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Top image area */
-.info-card::before {
-  content: "";
-  width: 80%;
-  height: 90px; 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  margin-top: 15px;
-}
-
-/* Background images per card */
-.info-card.friendly::before {
-  background-image: url("assets/img/friendly (1).jpg");
-}
-
-.info-card.place::before {
-  background-image: url("assets/img/Place_they_love.jpg");
-}
-
-.info-card.food::before {
-  background-image: url("assets/img/their_food.jpg");
-}
-
-/* Text styling */
-.info-card h3 {
-  font-size: 1.1em;
-  color: #3a2b17;
-  margin: 15px 0 8px;
-  font-weight: 700;
-}
-
-.info-card p {
-  color: #4a3b28;
-  font-size: 0.9em;
-  line-height: 1.5;
-  padding: 0 20px;
-  text-align: center;
-}
-
-/* Hover effect */
-.info-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
-}
-
-
-
-/* ========== Join Form ========== */
+/* ========== JOIN FORMM ========== */
 #joinForm {
   background: var(--light-color);
   border-radius: 12px;
@@ -571,6 +559,7 @@ section h2 {
 #joinForm button:hover {
   background: var(--btn-hover);
 }
+
 .join-hero-section {
   background: url("assets/img/JoinUs_header.webp") no-repeat center center/cover;
   color: white;
@@ -596,10 +585,7 @@ section h2 {
   
 }
 
-
-
-
- /* ========== Footer ========== */
+ /* ========== FOOTERRRR ========== */
 footer {
   background: var(--dark-color);
   color: var(--light-color);
@@ -629,7 +615,7 @@ footer .social-icons img:hover {
   transform: scale(1.2);
 }
 
-/* ========== Responsiveness ========== */
+/* ========== RESPONSIVENESSS ========== */
 @media (max-width: 1024px) {
   header {
     flex-direction: column;
@@ -667,7 +653,6 @@ footer .social-icons img:hover {
   }
 }
 
-/* Responsive layout */
 @media (max-width: 768px) {
   .funfacts {
     grid-template-columns: 1fr;
